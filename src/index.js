@@ -34,8 +34,8 @@ assign(Client_HDB.prototype, {
         return require('hdb')
     },
 
-    formatter() {
-        return new Formatter(this)
+    formatter(builder) {
+        return new Formatter(this, builder)
     },
 
     queryCompiler() {
